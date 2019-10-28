@@ -12,8 +12,8 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance.
 
-char ssid[] = "APPLE LAB";// Network Name
-char pass[] = "Vvce_9271"; // Network Password
+char ssid[] = "Wifi_Name";// Network Name
+char pass[] = "Wifi_Password"; // Network Password
 byte mac[6];
 
 String code;
@@ -22,9 +22,9 @@ int x=0;
 WiFiClient client;
 MySQL_Connection conn((Client *)&client);
 
-IPAddress server_addr(10,60,208,232); // MySQL server IP
-char user[] = "slayer"; // MySQL user
-char password[] = "death@123"; // MySQL password
+IPAddress server_addr(a,b,c,d); // MySQL server IP
+char user[] = "server_login"; // MySQL user
+char password[] = "server_login"; // MySQL password
 
 //query instruction
 
